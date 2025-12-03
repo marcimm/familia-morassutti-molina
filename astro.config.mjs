@@ -1,8 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  srcDir: 'src',
-  output: 'static',
-  site: 'https://marcimm.github.io',
-  base: '/familia-morassutti-molina/',
+  site: 'https://marcimm.github.io', // por enquanto usa o GitHub Pages
+  base: '/familia-morassutti-molina/', // nome do repositório
 });
