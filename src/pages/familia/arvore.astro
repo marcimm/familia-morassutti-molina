@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Árvore da Família">
+  <div class="breadcrumb"><a href={base}>Início</a> · Família</div>
+
+  <h1>Árvore da Família</h1>
+ 
+  <figure style="margin: 2rem 0; text-align: center;">
+    <img
+      src={`${base}images/arvore_leque.png`}
+      alt="Árvore ancestral em formato de leque da família Morassutti–Molina"
+      style="
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        border-radius: 0.9rem;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0 6px 22px rgba(0, 0, 0, 0.20);
+        background: #fdf7ee;
+        padding: 0.75rem;
+      "
+    />
+    <figcaption
+      style="
+        margin-top: 0.6rem;
+        font-size: 0.9rem;
+        color: #6b6b6b;
+        font-style: italic;
+      "
+    >
+      Árvore de ancestrais em formato de leque, mostrando as gerações que antecedem
+      Márcio Molina Morassutti, com destaque para os troncos italianos e espanhóis.
+      Todos os nomes confirmados por documentos de certidões diversos.
+    </figcaption>
+  </figure>
+
+</BaseLayout>

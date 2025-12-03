@@ -1,0 +1,358 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<style>
+  #sumario {
+    margin-top: 1rem;
+  }
+
+  .sumario-intro {
+    margin-bottom: 2rem;
+  }
+
+  .sumario-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sumario-item {
+    margin-bottom: 1.4rem;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    background: #f7f3eb;
+  }
+
+  .sumario-item h2,
+  .sumario-item h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+  }
+
+  .sumario-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .sumario-item a:hover {
+    text-decoration: underline;
+  }
+
+  .sumario-item p {
+    margin: 0.2rem 0 0 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  /* subíndices (com “tab”/recuo) */
+  .subindice-lista {
+    list-style: none;
+    margin: 0.4rem 0 0 0;
+    padding-left: 1.5rem; /* efeito de tab */
+  }
+
+  .subindice-lista li {
+    font-size: 0.86rem;
+    color: #555;
+    margin: 0.12rem 0;
+  }
+
+  .subindice-lista a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #555;
+  }
+
+  .subindice-lista a:hover {
+    text-decoration: underline;
+  }
+
+  .bloco-anexos {
+    margin-top: 2.5rem;
+  }
+
+  .bloco-anexos h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+<BaseLayout title="Sumário — História da Família Morassutti–Molina">
+  <div class="breadcrumb">
+    Início · Sumário
+  </div>
+
+  <h1>Sumário da obra</h1>
+
+  <section id="sumario" class="sumario-intro">
+    <p>
+      Este sumário apresenta os capítulos do livro da família Morassutti–Molina
+      em ordem de leitura, com uma breve descrição do conteúdo de cada um. Ele
+      funciona como um guia rápido para quem quer entender a estrutura da obra
+      antes de mergulhar em cada capítulo.
+    </p>
+  </section>
+
+  <ul class="sumario-lista">
+    <!-- PRELÚDIO -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/preludio`}>Prelúdio — Por que contar essa história</a></h2>
+      <p>
+        Apresenta a motivação do livro, a importância de registrar a memória
+        familiar e o diálogo entre documentos, relatos orais e pesquisa histórica.
+      </p>
+    </li>
+
+    <!-- CAP 1 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap1`}>CAPÍTULO 1 — Introdução</a></h2>
+      <p>
+        Define o escopo da obra, explica as fontes utilizadas (certidões, relatos,
+        DNA, registros históricos) e apresenta como o leitor pode acompanhar a
+        narrativa ao longo dos capítulos.
+      </p>
+      <!-- sem subíndices formais -->
+    </li>
+
+    <!-- CAP 2 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap2`}>CAPÍTULO 2 — As linhagens da família</a></h2>
+      <p>
+        Apresenta os ramos principais que formam a família Morassutti–Molina,
+        mostrando como diferentes origens italianas e espanholas acabaram se
+        unindo ao longo do tempo.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap2#sec-2-1`}>2.1 — A união de linhagens diferentes</a></li>
+        <li><a href={`${base}livro/cap2#sec-2-2`}>2.2 — As linhagens italianas</a></li>
+        <li><a href={`${base}livro/cap2#sec-2-3`}>2.3 — As linhagens espanholas</a></li>
+        <li><a href={`${base}livro/cap2#sec-2-4`}>2.4 — O encontro no Brasil</a></li>
+        <li><a href={`${base}livro/cap2#sec-2-5`}>2.5 — A árvore das origens</a></li>
+        <li><a href={`${base}livro/cap2#sec-2-6`}>2.6 — A importância dessas raízes para a narrativa</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 3 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap3`}>CAPÍTULO 3 — Origens genéticas da família</a></h2>
+      <p>
+        Interpreta os resultados de DNA, explica haplogrupos e composição
+        genética e conecta a ancestralidade biológica com a história documentada
+        da família.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap3#sec-3-1`}>3.1 — A profundidade do tempo antes dos documentos</a></li>
+        <li><a href={`${base}livro/cap3#sec-3-2`}>3.2 — A linhagem paterna: R1a, a marca de uma antiga dispersão europeia</a></li>
+        <li><a href={`${base}livro/cap3#sec-3-3`}>3.3 — A linhagem materna: T2, o fio mediterrânico</a></li>
+        <li><a href={`${base}livro/cap3#sec-3-4`}>3.4 — A composição genética e os troncos da família</a></li>
+        <li><a href={`${base}livro/cap3#sec-3-5`}>3.5 — A ancestralidade antes da travessia</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 4 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap4`}>CAPÍTULO 4 — As terras de onde vieram: Itália e Espanha</a></h2>
+      <p>
+        Descreve as regiões italianas e espanholas ligadas à família, o contexto
+        histórico do século XIX e as condições que moldaram a vida dos
+        antepassados antes da decisão de emigrar.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap4#sec-4-1`}>4.1 — A Itália do século XIX</a></li>
+        <li><a href={`${base}livro/cap4#sec-4-2`}>4.2 — Friuli, Macerata e o Norte profundo</a></li>
+        <li><a href={`${base}livro/cap4#sec-4-3`}>4.3 — A Espanha do século XIX</a></li>
+        <li><a href={`${base}livro/cap4#sec-4-4`}>4.4 — Murcia e Castela</a></li>
+        <li><a href={`${base}livro/cap4#sec-4-5`}>4.5 — Quando permanecer já não era possível</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 5 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap5`}>CAPÍTULO 5 — Os antepassados na Europa: vida rural, sobrenomes e cotidiano</a></h2>
+      <p>
+        Reconstrói o dia a dia dos antepassados ainda na Europa, com foco no
+        trabalho rural, nos sobrenomes e na cultura que antecedeu a partida para
+        o Brasil.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap5#sec-5-1`}>5.1 — A vida rural italiana</a></li>
+        <li><a href={`${base}livro/cap5#sec-5-2`}>5.2 — A vida rural espanhola</a></li>
+        <li><a href={`${base}livro/cap5#sec-5-3`}>5.3 — Os sobrenomes e a identidade familiar</a></li>
+        <li><a href={`${base}livro/cap5#sec-5-4`}>5.4 — O cotidiano que antecedeu a partida</a></li>
+        <li><a href={`${base}livro/cap5#sec-5-5`}>5.5 — O ponto de ruptura</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 6 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap6`}>CAPÍTULO 6 — O êxodo europeu e a travessia até o Brasil</a></h2>
+      <p>
+        Analisa o contexto da grande emigração europeia, as políticas de
+        imigração, o embarque nos portos e a travessia em navios rumo ao Brasil.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap6#sec-6-1`}>6.1 — O êxodo europeu: quando a Europa já não sustentava seus filhos</a></li>
+        <li><a href={`${base}livro/cap6#sec-6-2`}>6.2 — As políticas de imigração e o sistema que enviou milhões ao Brasil</a></li>
+        <li><a href={`${base}livro/cap6#sec-6-3`}>6.3 — Portos, agentes e o embarque</a></li>
+        <li><a href={`${base}livro/cap6#sec-6-4`}>6.4 — Os navios a vapor e a terceira classe</a></li>
+        <li><a href={`${base}livro/cap6#sec-6-5`}>6.5 — A travessia: calor, doença, medo e sobrevivência</a></li>
+        <li><a href={`${base}livro/cap6#sec-6-6`}>6.6 — O horizonte brasileiro</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 7 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap7`}>CAPÍTULO 7 — A chegada ao Brasil</a></h2>
+      <p>
+        Relata a chegada ao litoral brasileiro, o impacto do clima tropical, os
+        procedimentos no porto de Santos e o caminho até a Hospedaria dos
+        Imigrantes e o interior paulista.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap7#sec-7-1`}>7.1 — O primeiro olhar sobre o litoral brasileiro</a></li>
+        <li><a href={`${base}livro/cap7#sec-7-2`}>7.2 — O porto de Santos e o impacto do clima tropical</a></li>
+        <li><a href={`${base}livro/cap7#sec-7-3`}>7.3 — Desembarque, inspeções e registro</a></li>
+        <li><a href={`${base}livro/cap7#sec-7-4`}>7.4 — A Hospedaria dos Imigrantes: o portal para o interior</a></li>
+        <li><a href={`${base}livro/cap7#sec-7-5`}>7.5 — Destinos definidos: Brotas, Dois Córregos, Dourado e Ribeirão Bonito</a></li>
+        <li><a href={`${base}livro/cap7#sec-7-6`}>7.6 — O trem da Companhia Paulista rumo ao interior</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 8 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap8`}>CAPÍTULO 8 — A vida dos imigrantes nas fazendas paulistas</a></h2>
+      <p>
+        Mostra o cotidiano nas fazendas de café e outras propriedades do interior
+        paulista, com foco em trabalho, moradia e convivência nas colônias.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap8#sec-8-1`}>8.1 — O interior paulista no final do século XIX</a></li>
+        <li><a href={`${base}livro/cap8#sec-8-2`}>8.2 — A estrutura do trabalho nas fazendas de café</a></li>
+        <li><a href={`${base}livro/cap8#sec-8-3`}>8.3 — Moradias e o cotidiano nas colônias</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 9 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap9`}>CAPÍTULO 9 — As regiões da família no Brasil</a></h2>
+      <p>
+        Acompanha a dispersão da família dentro do Brasil, especialmente em São
+        Paulo e no Paraná, mapeando cidades, colônias e frentes de ocupação
+        ligadas à linhagem.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap9#sec-9-1`}>9.1 — A ocupação do interior paulista</a></li>
+        <li><a href={`${base}livro/cap9#sec-9-2`}>9.2 — Brotas: o destino de Luigi Morassutti e Ersilia Lazzari</a></li>
+        <li><a href={`${base}livro/cap9#sec-9-3`}>9.3 — Dois Córregos: a trajetória de Domingos Arena e Maria Gregorio</a></li>
+        <li><a href={`${base}livro/cap9#sec-9-4`}>9.4 — Dourado, São Carlos e Ribeirão Bonito: o caminho de Giovanni Tirabosco e Angelina Batatteiro</a></li>
+        <li><a href={`${base}livro/cap9#sec-9-5`}>9.5 — Os espanhóis no Brasil: o percurso dos ramos Matheus, Sanches, Girado e Martines</a></li>
+        <li><a href={`${base}livro/cap9#sec-9-6`}>9.6 — A família enraizada no interior</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 10 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap10`}>CAPÍTULO 10 — Os primeiros casamentos no Brasil: a consolidação das linhas familiares</a></h2>
+      <p>
+        Apresenta os casamentos que uniram diferentes ramos em solo brasileiro,
+        formando os núcleos que dariam origem aos avós e bisavós da família.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap10#sec-10-a`}>Seção A — Lado paterno (Itália)</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-1`}>10.1 — Luigi Morassutti</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-2`}>10.2 — Domingos Arena</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-3`}>10.3 — José Arena</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-4`}>10.4 — João Morassutti</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-b`}>Seção B — Lado materno (Espanha)</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-5`}>10.5 — Miguel Matheus Molina</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-6`}>10.6 — Antonio Girado</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-7`}>10.7 — Bartholomeu Garcia Molina</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-8`}>10.8 — João Roman</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-9`}>10.9 — Antonio Martinez Molina</a></li>
+        <li><a href={`${base}livro/cap10#sec-10-10`}>10.10 — A convergência das linhas familiares</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 11 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap11`}>CAPÍTULO 11 — A segunda grande migração: do interior paulista ao Paraná</a></h2>
+      <p>
+        Narra a movimentação da família do interior de São Paulo para o Oeste
+        do Paraná, explicando os motivos econômicos e as oportunidades que
+        impulsionaram essa nova migração interna.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap11#sec-11-1`}>11.1 — O enraizamento inicial no interior paulista</a></li>
+        <li><a href={`${base}livro/cap11#sec-11-2`}>11.2 — Mudanças no interior paulista e a busca por novas terras</a></li>
+        <li><a href={`${base}livro/cap11#sec-11-3`}>11.3 — Tupã: primeira grande mudança (1952–1954)</a></li>
+        <li><a href={`${base}livro/cap11#sec-11-4`}>11.4 — O Paraná como nova fronteira agrícola</a></li>
+        <li><a href={`${base}livro/cap11#sec-11-5`}>11.5 — Entrada no Paraná: Cambé e Rolândia (1958–1961)</a></li>
+        <li><a href={`${base}livro/cap11#sec-11-6`}>11.6 — O deslocamento interno: São Jorge (1971)</a></li>
+        <li><a href={`${base}livro/cap11#sec-11-7`}>11.7 — A etapa final da migração: Assis Chateaubriand (1973)</a></li>
+        <li><a href={`${base}livro/cap11#sec-11-8`}>11.8 — Os nascimentos como marcos da migração</a></li>
+        <li><a href={`${base}livro/cap11#sec-11-9`}>11.9 — O encerramento da trajetória da geração pioneira</a></li>
+      </ul>
+    </li>
+
+    <!-- CAP 12 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap12`}>CAPÍTULO 12 — A família moderna: 1970–2000 em fotos e memórias</a></h2>
+      <p>
+        Marca a entrada da família no período moderno, quando surgem as primeiras
+        fotos domésticas. Reconta a história dos avós e pais por meio de imagens,
+        cenas do cotidiano e lembranças visuais.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap12#sec-12-1`}>12.1 — Quando a família começa a aparecer nas fotos (1970–1979)</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-2`}>12.2 — Infância, escola e cotidiano no interior (1980–1989)</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-3`}>12.3 — Novas rotinas, novas paisagens (1990–2000)</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-4`}>12.4 — A memória visual como herança</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- ANEXOS / OUTRAS PÁGINAS -->
+  <section class="bloco-anexos">
+    <h2>Materiais complementares</h2>
+
+    <ul class="sumario-lista">
+      <li class="sumario-item">
+        <h3><a href={`${base}livro/album`}>Álbum de fotos da família</a></h3>
+        <p>
+          Seleção comentada de fotos da família entre as décadas de 1970 e 2000,
+          organizada por períodos, com espaço para registrar nomes, datas e
+          lembranças associadas a cada imagem.
+        </p>
+      </li>
+
+      <li class="sumario-item">
+        <h3><a href={`${base}livro/glossario`}>Glossário</a></h3>
+        <p>
+          Explica termos históricos, genealógicos e regionais utilizados ao longo
+          do livro, facilitando a leitura de quem não está familiarizado com
+          alguns conceitos.
+        </p>
+      </li>
+
+      <li class="sumario-item">
+        <h3><a href={`${base}livro/referencias`}>Referências bibliográficas</a></h3>
+        <p>
+          Lista obras, sites, artigos e documentos consultados na pesquisa,
+          permitindo que o leitor aprofunde os temas tratados.
+        </p>
+      </li>
+
+      <li class="sumario-item">
+        <h3><a href={`${base}livro/pendencias`}>Pendências e pontos a complementar</a></h3>
+        <p>
+          Espaço para registrar lacunas de informação, documentos ainda não
+          localizados e temas que poderão ser desenvolvidos em futuras versões
+          da obra.
+        </p>
+      </li>
+    </ul>
+  </section>
+</BaseLayout>

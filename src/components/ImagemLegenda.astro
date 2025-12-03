@@ -1,0 +1,47 @@
+---
+/**
+ * Props:
+ * - src: string (caminho da imagem, ex: "/imagens/linha-tempo-geral.png")
+ * - alt: string (texto alternativo)
+ * - legenda: string (texto da legenda)
+ * - credito?: string (opcional, quem fez a imagem / fonte)
+ */
+const { src, alt, legenda, credito = "" } = Astro.props;
+---
+
+<style>
+  .fig-imagem {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 900px;
+  }
+
+  .fig-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.18);
+  }
+
+  .fig-imagem figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  .fig-imagem .credito {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.8rem;
+    color: #777;
+  }
+</style>
+
+<figure class="fig-imagem">
+  <img src={src} alt={alt} loading="lazy" />
+  <figcaption>
+    {legenda}
+    {credito && <span class="credito">Crédito: {credito}</span>}
+  </figcaption>
+</figure>

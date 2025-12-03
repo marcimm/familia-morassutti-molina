@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Referências Bibliográficas">
+  <div class="breadcrumb"><a href={base}>Início</a> · Referências Bibliográficas</div>
+
+  <h1>Referências Bibliográficas</h1>
+
+  <p>Esta seção reúne as fontes históricas, demográficas, linguísticas e arquivísticas utilizadas na elaboração dos capítulos deste livro.</p>
+
+
+  <h2>Documentos primários da família</h2>
+
+  <table id="tabela-certidoes" style="width:100%; border-collapse:collapse; font-size:0.85rem; margin-top:1rem;">
+    <thead>
+      <tr style="background:#f0e7dc;">
+        <th style="padding:0.35rem; border-bottom:1px solid #d6c7b4; text-align:left;">Pessoa</th>
+        <th style="padding:0.35rem; border-bottom:1px solid #d6c7b4; text-align:center;">Tipo</th>
+        <th style="padding:0.35rem; border-bottom:1px solid #d6c7b4; text-align:center;">Data</th>
+        <th style="padding:0.35rem; border-bottom:1px solid #d6c7b4; text-align:left;">Local</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <!-- ========================= -->
+      <!--   CERTIDÕES DOS AVÓS      -->
+      <!-- ========================= -->
+
+      <tr>
+        <td style="padding:0.25rem;">João Morassutti</td>
+        <td style="padding:0.25rem; text-align:center;">Óbito</td>
+        <td style="padding:0.25rem; text-align:center;">03/10/1992</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Assis Chateaubriand/PR — Hospital A. Ruth Corrêa
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:0.25rem;">Iolanda Arena Morassutti</td>
+        <td style="padding:0.25rem; text-align:center;">Óbito</td>
+        <td style="padding:0.25rem; text-align:center;">31/01/2014</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Assis Chateaubriand/PR
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:0.25rem;">João Morassutti & Iolanda Arena</td>
+        <td style="padding:0.25rem; text-align:center;">Casamento</td>
+        <td style="padding:0.25rem; text-align:center;">1945</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Dois Córregos/SP
+        </td>
+      </tr>
+
+      <!-- ========================= -->
+      <!--  CERTIDÕES DOS BISAVÓS    -->
+      <!-- ========================= -->
+
+      <tr>
+        <td style="padding:0.25rem;">Luigi Morassutti</td>
+        <td style="padding:0.25rem; text-align:center;">Nascimento</td>
+        <td style="padding:0.25rem; text-align:center;">—</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/it.png`} style="width:16px; vertical-align:middle;">Friuli/Pordenoni, Itália
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:0.25rem;">Luigi Morassutti & Ersilia Lazzari</td>
+        <td style="padding:0.25rem; text-align:center;">Casamento</td>
+        <td style="padding:0.25rem; text-align:center;">—</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Brotas/SP
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:0.25rem;">Bartholomeu Molina & Isabel Martines Girado</td>
+        <td style="padding:0.25rem; text-align:center;">Casamento</td>
+        <td style="padding:0.25rem; text-align:center;">—</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Dourado/SP
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:0.25rem;">Antônio Molina & Clementina Roman Matheus</td>
+        <td style="padding:0.25rem; text-align:center;">Casamento</td>
+        <td style="padding:0.25rem; text-align:center;">1951</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Ribeirão Bonito/SP
+        </td>
+      </tr>
+
+      <!-- ========================= -->
+      <!--     CERTIDÕES DOS PAIS    -->
+      <!-- ========================= -->
+
+      <tr>
+        <td style="padding:0.25rem;">José Antônio Morassutti</td>
+        <td style="padding:0.25rem; text-align:center;">Nascimento</td>
+        <td style="padding:0.25rem; text-align:center;">12/03/1954</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Tupã/SP — domicílio rural
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:0.25rem;">João Benedito Morassutti</td>
+        <td style="padding:0.25rem; text-align:center;">Nascimento</td>
+        <td style="padding:0.25rem; text-align:center;">01/07/1961</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Rolândia/PR — Distrito de São Martinho
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:0.25rem;">José Antônio Morassutti & Irene Roman Molina</td>
+        <td style="padding:0.25rem; text-align:center;">Casamento</td>
+        <td style="padding:0.25rem; text-align:center;">1970s</td>
+        <td style="padding:0.25rem;">
+          <img src={`${base}flags/br.png`} style="width:16px; vertical-align:middle;"> Assis Chateaubriand/PR
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <h2>Fontes de DNA e genética histórica</h2>
+  <ul>
+    <li>Genera – teste composição do DNA de Márcio Molina Morassutti, 2024.</li>
+    <li>YFull – árvore filogenética e mapas de haplogrupos.</li>
+    <li>ISOGG – International Society of Genetic Genealogy – documentação técnica.</li>
+    <li>FamilyTreeDNA – descrições de haplogrupos e distribuição geográfica.</li>
+    <li>Nature, Cell – artigos científicos sobre haplogrupos europeus.</li>
+  </ul>
+
+  <h2>História da Itália – Século XIX e início do XX</h2>
+  <ul>
+    <li>GINSBORG, Paul. <em>A History of Contemporary Italy: Society and Politics 1943–1988.</em> Palgrave Macmillan, Londres, 1990.</li>
+    <li>GENTILE, Emilio. <em>La Grande Italia: Il mito della nazione nel XX secolo.</em> Roma: Laterza, 2006.</li>
+    <li>ISTAT – Istituto Nazionale di Statistica. <em>Ricerche storiche sulla demografia italiana</em> (1800–1900).</li>
+    <li>Enciclopedia Italiana Treccani – verbetes sobre Friuli, Marche e Calábria.</li>
+    <li>CORTELAZZO, M.; ZOLLI, P. <em>Dizionario Etimologico della Lingua Italiana.</em> Bologna, Zanichelli.</li>
+    <li>DE FELICE, Emidio. <em>I Cognomi Italiani.</em> Milano: Arnoldo Mondadori.</li>
+  </ul>
+
+  <h2>História da Espanha – Século XIX e início do XX</h2>
+  <ul>
+    <li>Biblioteca Nacional de España – acervo histórico (século XIX).</li>
+    <li>Archivo General de la Región de Murcia – documentos sobre economia agrícola e seca crônica (1850–1900).</li>
+    <li>PABÓN, Jesús. <em>Historia Contemporánea de España.</em> Madrid: Alianza Editorial.</li>
+    <li>Instituto Geográfico Nacional de España – demografia histórica.</li>
+    <li>FAURE, Roberto; RIBES, María Asunción; GARCÍA, Antonio. <em>Diccionario de Apellidos Españoles.</em> Madrid: Espasa-Calpe.</li>
+  </ul>
+
+  <h2>Travessia em navios e imigração europeia (1870–1920)</h2>
+  <ul>
+    <li>Museu da Imigração do Estado de São Paulo – documentação da Hospedaria dos Imigrantes.</li>
+    <li>Arquivo Público do Estado de São Paulo – listas de bordo e registros de navios (1880–1910).</li>
+    <li>Ministero degli Affari Esteri (Itália) – relatórios sobre viagens de terceira classe.</li>
+    <li>Newspapers Archive – reportagens sobre mortalidade em navios de imigração (século XIX).</li>
+  </ul>
+
+  <h2>Chegada ao Brasil, café e interior paulista (1890–1950)</h2>
+  <ul>
+    <li>Instituto Histórico e Geográfico de São Paulo – colonização do interior paulista.</li>
+    <li>Museu do Café – acervo sobre cafeicultura e formação de fazendas.</li>
+    <li>IBGE – séries históricas de população e fluxos migratórios internos.</li>
+    <li>Arquivo Público do Estado de São Paulo – registros da Hospedaria dos Imigrantes.</li>
+  </ul>
+
+  <h2>Migração interna – São Paulo → Paraná (1940–1980)</h2>
+  <ul>
+    <li>Companhia de Terras Norte do Paraná (CTNP) – histórico de colonização de Londrina, Cambé e Rolândia.</li>
+    <li>Instituto de Desenvolvimento Rural do Paraná (IDR–PR) – colonização do Norte e Oeste paranaense.</li>
+    <li>Museu Histórico de Londrina – ocupação e expansão agrícola do Norte Pioneiro.</li>
+    <li>Prefeitura Municipal de Assis Chateaubriand – acervo histórico e fundação do município.</li>
+    <li>Arquivo Público do Estado de São Paulo – documentação sobre a Alta Paulista e Tupã.</li>
+  </ul>
+
+  <h2>Etimologia – Sobrenomes italianos e espanhóis</h2>
+  <ul>
+    <li>Enciclopedia Treccani – origem de termos e sobrenomes italianos.</li>
+    <li>DE FELICE, Emidio – <em>I Cognomi Italiani</em>.</li>
+    <li>FAURE, R.; RIBES, M. A.; GARCÍA, A. – <em>Diccionario de Apellidos Españoles</em>.</li>
+  </ul>
+
+  <h2>Documentos primários da família (capítulos 10 e 11)</h2>
+  <ul>
+    <li>Certidões de nascimento, casamento e óbito da família Morassutti–Molina (1930–2014), acervo pessoal do autor.</li>
+    <li>Registros civis de Rolândia–PR, Tupã–SP, Brotas–SP, Assis Chateaubriand–PR.</li>
+  </ul>
+
+  <h2 id="sec-11-10">Fontes e referências CAPÍTULO 11 — A Segunda Grande Migração: Do Interior Paulista ao Paraná</h2>
+  <p>
+    Este capítulo foi elaborado com base em documentos da família, legislação municipal e estadual, e em sínteses históricas sobre imigração, cafeicultura e colonização do interior paulista e do Paraná. Entre as principais referências consultadas, destacam-se:
+  </p>
+  <ul>
+    <li>Prefeitura Municipal de Brotas (SP) — seções de história do município e materiais sobre o ciclo do café e a presença de imigrantes italianos.</li>
+    <li>Dados do IBGE e estudos sobre imigração italiana e destinos dos imigrantes no estado de São Paulo e no Sul do Brasil.</li>
+    <li>Prefeitura e Câmara Municipal de Assis Chateaubriand (PR) — textos oficiais sobre a colonização do Vale do Piquiri e a formação do município.</li>
+    <li>Prefeitura Municipal de Cambé (PR) e Câmara Municipal de Rolândia (PR) — históricos da formação urbana vinculada à Companhia de Terras Norte do Paraná / Companhia Melhoramentos Norte do Paraná.</li>
+    <li>Pesquisas acadêmicas sobre colonização do Norte do Paraná, como estudos sobre a Companhia Melhoramentos Norte do Paraná, a cafeeicultura e o processo de ocupação de pequenas propriedades rurais.</li>
+    <li>Projetos de história local e memória dos municípios de São Jorge do Ivaí e Assis Chateaubriand, produzidos no âmbito de programas educacionais e universitários do estado do Paraná.</li>
+  </ul>
+
+</BaseLayout>

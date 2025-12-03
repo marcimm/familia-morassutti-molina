@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login — Acesso restrito</title>
+
+    <!-- Evitar indexação também da página de login -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: #0f172a;
+        color: #e5e7eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .card {
+        background: #020617;
+        border-radius: 12px;
+        padding: 32px 28px;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+        max-width: 460px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: #9ca3af;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      label {
+        display: block;
+        font-size: 0.85rem;
+        margin-bottom: 0.35rem;
+      }
+
+      input[type="password"] {
+        width: 95%;
+        padding: 0.55rem 0.7rem;
+        border-radius: 8px;
+        border: 1px solid #4b5563;
+        background: #020617;
+        color: #e5e7eb;
+        outline: none;
+      }
+
+      input[type="password"]:focus {
+        border-color: #38bdf8;
+        box-shadow: 0 0 0 1px #38bdf8;
+         width: 80%;
+      }
+
+      button {
+        margin-top: 0.9rem;
+        width: 100%;
+        padding: 0.6rem 0.7rem;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        background: #38bdf8;
+        color: #020617;
+      }
+
+      button:hover {
+        background: #0ea5e9;
+      }
+
+      small {
+        display: block;
+        margin-top: 0.8rem;
+        font-size: 0.75rem;
+        color: #6b7280;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>🔒 Área restrita</h1>
+      <p>Este site é privado. Digite a senha para acessar o conteúdo.</p>
+
+      <label for="senha">Senha</label>
+      <input
+        id="senha"
+        type="password"
+        placeholder="Digite a senha"
+        autocomplete="off"
+        onkeydown={(event) => {
+          if (event.key === 'Enter') {
+            validarSenha();
+          }
+        }}
+      />
+
+      <button type="button" onclick="validarSenha()">Entrar</button>
+
+    </div>
+
+   <script>
+      const senhaCorreta = "familia-MM-2025";
+
+      // EXPÕE A FUNÇÃO NO ESCOPO GLOBAL
+      window.validarSenha = function () {
+        const input = document.getElementById("senha");
+        if (!input) return;
+
+        const senha = input.value.trim();
+
+        if (senha === senhaCorreta) {
+          sessionStorage.setItem("acesso", "ok");
+
+          // Descobre o "base" removendo /login ou /login/ do final
+          const path = window.location.pathname;
+          const basePath = path.replace(/login\/?$/, "");
+          const normalizedBase = basePath.endsWith("/")
+            ? basePath
+            : basePath + "/";
+
+          window.location.href = normalizedBase;
+        } else {
+          alert("Senha incorreta");
+          input.value = "";
+          input.focus();
+        }
+      };
+    </script>
+
+  </body>
+</html>

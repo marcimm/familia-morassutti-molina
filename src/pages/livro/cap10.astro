@@ -1,0 +1,364 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
+---
+
+<style>
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted #aaa;
+  padding: 0 2px;
+  white-space: nowrap;
+}
+
+/* Tooltip box */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #ffffff;
+  color: #333;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  position: absolute;
+  z-index: 10;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.82rem;
+  line-height: 1.32;
+  font-weight: 400;
+  white-space: normal;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #ddd transparent;
+}
+
+/* Hover effect */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Legenda de gerações */
+.geracao-legenda {
+  background:#f7f7f7;
+  padding:12px 15px;
+  border-left:4px solid #777;
+  margin-bottom:25px;
+  font-size:0.95rem;
+  line-height:1.45;
+}
+</style>
+
+<BaseLayout title="CAPÍTULO 10 — Os Primeiros Casamentos no Brasil">
+  <div class="breadcrumb"><a href="/">Início</a> · CAPÍTULO 10 — Os Primeiros Casamentos no Brasil</div>
+
+  <h1>CAPÍTULO 10 — Os Primeiros Casamentos no Brasil: A Consolidação das Linhas Familiares</h1>
+
+  <div class="geracao-legenda">
+    <strong>Legenda de Gerações:</strong><br>
+    <strong>G0</strong> — Imigrantes nascidos na Europa<br>
+    <strong>G1</strong> — Primeira geração nascida no Brasil (filhos dos imigrantes)<br>
+    <strong>G2</strong> — Netos dos imigrantes<br>
+  </div>
+
+  <p>
+    Os primeiros casamentos realizados em solo brasileiro representam um marco definitivo na formação das linhas familiares italianas e espanholas. 
+    Esses registros oficiais — produzidos em cartórios de Brotas, Dois Córregos, Ribeirão Bonito e, posteriormente, no Paraná — mostram a estrutura civil, 
+    os vínculos familiares e a consolidação das gerações que surgiriam nas décadas seguintes. Este capítulo apresenta essas uniões, 
+    divididas pelo lado paterno e materno, com informações completas extraídas das certidões.
+  </p>
+
+    
+
+
+  <!-- ============================= -->
+  <!-- SEÇÃO A — LADO PATERNO (ITÁLIA) -->
+  <!-- ============================= -->
+
+<h2 style="margin-top:40px;">SEÇÃO A — Lado Paterno (Itália)</h2>
+  <hr>
+<p>
+  Esta seção reúne os casamentos que compõem o <strong>ramo paterno</strong> da família: 
+  as linhagens <strong>Morassutti</strong>, <strong>Lazzari</strong>, <strong>Arena</strong>, 
+  <strong>Tirabosco</strong> e <strong>Gregorio</strong>, todas de origem italiana. 
+  Estes casamentos representam a base do tronco familiar paterno e marcam o início da 
+  trajetória dos antepassados no interior de São Paulo, antes da migração para o Paraná.
+</p>
+
+  <h2>10.1 — 
+    <span class="tooltip">Luigi Morassutti
+      <span class="tooltiptext">
+        G0 — Imigrante italiano<br>
+        Nascido em Fiume Veneto (Friuli)<br>
+        Filho de Giovanni Morassutti e Maria Rossetti
+      </span>
+    </span> 
+    & 
+    <span class="tooltip">Ersilia Lazzari
+      <span class="tooltiptext">
+        G0 — Imigrante italiana<br>
+        Natural das colinas de Macerata (Marche)<br>
+        Filha de Giosuè Lazzari e Catarina Cataldo
+      </span>
+    </span> 
+    (G0 + G0)
+  </h2>
+
+  <p>
+    O casamento civil entre Luigi Morassutti e Ersilia Lazzari ocorreu em <strong>19 de dezembro de 1902</strong>, no cartório de Brotas/SP. 
+    Este registro inaugura formalmente o ramo Morassutti–Lazzari no Brasil e mostra uma família já organizada e reconhecida pelas autoridades locais.
+  </p>
+
+  <ul>
+    <li><strong>Idades declaradas:</strong> Luigi (26), Ersilia (27)</li>
+    <li><strong>Profissões:</strong> Luigi lavrador; Ersilia doméstica</li>
+    <li><strong>Local:</strong> Brotas/SP</li>
+    <li><strong>Testemunha importante:</strong> Giuseppe Morassutti</li>
+    <li><strong>Autoridade:</strong> Major Francisco José de Oliveira Castro (Juiz de Paz)</li>
+  </ul>
+
+  <h2>10.2 — 
+    <span class="tooltip">Domingos Arena
+      <span class="tooltiptext">
+        G0 — Imigrante italiano<br>
+        Patriarca do ramo Arena no Brasil
+      </span>
+    </span> 
+    & 
+    <span class="tooltip">Maria Gregorio
+      <span class="tooltiptext">
+        G0 — Imigrante italiana<br>
+        Matriarca do ramo Gregorio no Brasil
+      </span>
+    </span> 
+    (G0 + G0)
+  </h2>
+
+  <p>
+    Embora a certidão não esteja entre os anexos, diversos documentos confirmam que Domingos Arena e Maria Gregorio eram imigrantes italianos 
+    que se estabeleceram no interior paulista e tiveram filhos legítimos registrados, atestando casamento estável ou formalização civil.
+  </p>
+
+  <h2>10.3 —
+    <span class="tooltip">José Arena
+      <span class="tooltiptext">
+        G1 — Filho de imigrantes<br>
+        Filho de Domingos Arena e Maria Gregorio
+      </span>
+    </span>
+    &
+    <span class="tooltip">Marina Tirabosco
+      <span class="tooltiptext">
+        G1 — Filha de imigrantes<br>
+        Filha de Giovanni Tirabosco e Angelina Batatteiro
+      </span>
+    </span>
+    (G1 + G1)
+  </h2>
+
+  <p>
+    A união de José Arena e Marina Tirabosco consolidou dois ramos italianos estabelecidos na região de Dois Córregos, Dourado e Ribeirão Bonito. 
+    Os registros dos filhos confirmam que ambos pertenciam à primeira geração brasileira (G1), descendentes diretos de imigrantes.
+  </p>
+
+  <h2>10.4 —
+    <span class="tooltip">João Morassutti
+      <span class="tooltiptext">
+        G1 — Filho de Luigi e Ersilia (G0)<br>
+        Nascido em Brotas/SP
+      </span>
+    </span>
+    &
+    <span class="tooltip">Iolanda Arena
+      <span class="tooltiptext">
+        G2 — Neta dos imigrantes Arena e Tirabosco<br>
+        Nascida em Dois Córregos/SP
+      </span>
+    </span>
+    (G1 + G2)
+  </h2>
+
+  <p>
+    O casamento entre João Morassutti e Iolanda Arena ocorreu em <strong>2 de junho de 1945</strong>, no cartório de Brotas. 
+    Este documento, muito completo, registra a união de quatro importantes ramos italianos da família: Morassutti, Lazzari, Arena e Tirabosco.
+  </p>
+
+  <ul>
+    <li><strong>Noivo:</strong> lavrador</li>
+    <li><strong>Noiva:</strong> doméstica</li>
+    <li><strong>Testemunhas:</strong> Argemiro Soares de Moura e Argemiro Gomes de Souza</li>
+    <li><strong>Local:</strong> Brotas/SP</li>
+  </ul>
+
+  <!-- ============================= -->
+  <!-- SEÇÃO B — LADO MATERNO (ESPANHA) -->
+  <!-- ============================= -->
+  
+  <hr>  
+  <h2 style="margin-top:40px;">SEÇÃO B — Lado Materno (Espanha)</h2>
+  <hr>
+<p>
+  Esta seção apresenta os casamentos que formam o <strong>ramo materno</strong> da família: 
+  as linhagens <strong>Molina</strong>, <strong>Matheus</strong>, <strong>Sanches</strong>, 
+  <strong>Girado</strong>, <strong>Martines</strong> e <strong>Roman</strong>, 
+  todas de origem espanhola. Estes casamentos deram origem à vertente materna estabelecida 
+  entre Dourado e Ribeirão Bonito, antes da chegada definitiva ao Paraná.
+</p>
+
+  <h2>10.5 —
+    <span class="tooltip">Miguel Matheus Molina
+      <span class="tooltiptext">
+        G0 — Imigrante espanhol<br>
+        Origem provável: Murcia<br>
+        Pai de Bartholomeu (G1)
+      </span>
+    </span>
+    &
+    <span class="tooltip">Catharina Garcia Sanches
+      <span class="tooltiptext">
+        G0 — Imigrante espanhola<br>
+        Linha Garcia Sanches
+      </span>
+    </span>
+    (G0 + G0)
+  </h2>
+
+  <p>
+    Miguel Matheus Molina e Catharina Garcia Sanches iniciaram os ramos Molina, Matheus e Sanches no interior paulista. 
+    Os registros de seus filhos confirmam a presença espanhola e sua fixação em Dourado e Ribeirão Bonito no início do século XX.
+  </p>
+
+  <h2>10.6 —
+    <span class="tooltip">Antonio Girado
+      <span class="tooltiptext">
+        G0 — Imigrante espanhol<br>
+        Pai de Isabel Martines Girado
+      </span>
+    </span>
+    &
+    <span class="tooltip">Isabel Jordan Martines
+      <span class="tooltiptext">
+        G0 — Imigrante espanhola<br>
+        Mãe de Isabel Martines Girado
+      </span>
+    </span>
+    (G0 + G0)
+  </h2>
+
+  <p>
+    A certidão da filha confirma que este casal espanhol migrou com filhos pequenos e se estabeleceu na região de Ribeirão Bonito. 
+    Este casamento forma a base do ramo Girado–Martines.
+  </p>
+
+  <h2>10.7 —
+    <span class="tooltip">Bartholomeu Garcia Molina
+      <span class="tooltiptext">
+        G1 — Filho de imigrantes espanhóis<br>
+        Nascido em Dourado/SP em 1908
+      </span>
+    </span>
+    &
+    <span class="tooltip">Isabel Martines Girado
+      <span class="tooltiptext">
+        G0 — Imigrante espanhola<br>
+        Nascida na Espanha em 1906
+      </span>
+    </span>
+    (G1 + G0)
+  </h2>
+
+  <p>
+    Bartholomeu e Isabel casaram-se em <strong>16 de setembro de 1929</strong>, em Ribeirão Bonito/SP. 
+    Este casamento une os ramos Molina e Girado/Martines, pilares da linhagem espanhola.
+  </p>
+
+  <ul>
+    <li><strong>Noivo:</strong> lavrador</li>
+    <li><strong>Noiva:</strong> espanhola naturalizada</li>
+    <li><strong>Escrivão:</strong> Avelino de Oliveira</li>
+    <li><strong>Local:</strong> Ribeirão Bonito/SP</li>
+  </ul>
+
+  <h2>10.8 —
+    <span class="tooltip">João Roman
+      <span class="tooltiptext">
+        G0 — Origem espanhola<br>
+        Pai de Clementina
+      </span>
+    </span>
+    &
+    <span class="tooltip">Teresa Matheus
+      <span class="tooltiptext">
+        G0 — Origem espanhola<br>
+        Mãe de Clementina
+      </span>
+    </span>
+    (G0 + G0)
+  </h2>
+
+  <p>
+    João Roman e Teresa Matheus formaram o ramo Roman–Matheus, presente em Ribeirão Bonito 
+    e integrado aos demais ramos espanhóis por meio das gerações seguintes.
+  </p>
+
+  <h2>10.9 —
+    <span class="tooltip">Antonio Martinez Molina
+      <span class="tooltiptext">
+        G2 — Nascido em Ribeirão Bonito/SP em 1933<br>
+        Neto de imigrantes espanhóis
+      </span>
+    </span>
+    &
+    <span class="tooltip">Clementina Aparecida Roman Matheus
+      <span class="tooltiptext">
+        G2 — Nascida em Ribeirão Bonito/SP em 1936<br>
+        Neta de imigrantes espanhóis
+      </span>
+    </span>
+    (G2 + G2)
+  </h2>
+
+  <p>
+    O casamento civil ocorreu em <strong>19 de julho de 1980</strong>, em Rolândia/PR. 
+    Esta união integra definitivamente os ramos Molina, Martines, Girado, Roman e Matheus.
+  </p>
+
+  <ul>
+    <li><strong>Noivo:</strong> lavrador</li>
+    <li><strong>Noiva:</strong> doméstica</li>
+    <li><strong>Local:</strong> Rolândia/PR</li>
+    <li><strong>Observação:</strong> anotação sobre regime de bens desde 1953</li>
+  </ul>
+
+
+  <hr>
+
+  <h2>10.10 — A convergência das linhas familiares</h2>
+
+  <p>
+    Em apenas três gerações — G0, G1 e G2 — oito grandes ramos familiares (Morassutti, Lazzari, Arena, Tirabosco, Matheus, Sanches, Girado e Molina) 
+    se uniram através de casamentos registrados no interior paulista e, mais tarde, no Paraná. 
+    Estes documentos mostram como italianos e espanhóis, inicialmente distantes, convergiram em um único tronco familiar que se estabeleceria definitivamente no sul do país.
+  </p>
+
+<NavegacaoCapitulo 
+  anterior={{ url: "livro/cap9", titulo: "Capítulo 9" }}
+  atual="Capítulo 10 — Primeiros casamentos no Brasil"
+  proximo={{ url: "livro/cap11", titulo: "Capítulo 11" }}
+/>
+
+</BaseLayout>

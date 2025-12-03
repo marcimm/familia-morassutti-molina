@@ -1,0 +1,98 @@
+---
+/**
+ * Props:
+ * - anterior: { url: string, titulo: string } | null
+ * - atual: string (título do capítulo atual)
+ * - proximo: { url: string, titulo: string } | null
+ *
+ * IMPORTANTE:
+ * - anterior.url e proximo.url devem ser caminhos relativos começando com "/"
+ *   Ex.: "/livro/cap1", "/livro/cap2", "/livro/preludio"
+ */
+const { anterior = null, atual, proximo = null } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<style>
+  .nav-capitulo {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* ajuda no mobile */
+  }
+
+  .nav-item {
+    flex: 1;
+    text-align: center;
+  }
+
+  .nav-left {
+    text-align: left;
+  }
+
+  .nav-right {
+    text-align: right;
+  }
+
+  .nav-capitulo a {
+    padding: 0.55rem 1.1rem;
+    background: #ffffffcc;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: 0.2s;
+    white-space: nowrap;
+  }
+
+  .nav-capitulo a:hover {
+    background: #f0f0f0;
+  }
+
+  .nav-titulo {
+    font-weight: 600;
+    color: #555;
+    white-space: nowrap;
+  }
+
+  /* Mobile: empilha */
+  @media (max-width: 780px) {
+    .nav-capitulo {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .nav-left, .nav-right {
+      text-align: center;
+    }
+
+    .nav-titulo {
+      display: block;
+      margin: 0.8rem 0;
+    }
+  }
+</style>
+
+<div class="nav-capitulo">
+  <div class="nav-item nav-left">
+    {anterior && (
+      <a href={`${base}${anterior.url}`}>← {anterior.titulo}</a>
+    )}
+  </div>
+
+  <div class="nav-item">
+    <span class="nav-titulo">{atual}</span>
+  </div>
+
+  <div class="nav-item nav-right">
+    {proximo && (
+      <a href={`${base}${proximo.url}`}>{proximo.titulo} →</a>
+    )}
+  </div>
+</div>

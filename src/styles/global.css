@@ -1,0 +1,333 @@
+:root {
+  --hf-bg: #f5efe5;
+  --hf-bg-strong: #efe1cf;
+  --hf-bg-dark: #1c252f;
+  --hf-bg-dark-soft: #25313d;
+  --hf-accent: #8b3b05;
+  --hf-accent-soft: #fbbf24;
+  --hf-border-soft: #e2cfb8;
+  --hf-border-strong: #c4a688;
+  --hf-text: #201a15;
+  --hf-text-soft: #5c5045;
+  --hf-heading: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: radial-gradient(circle at top left, #fdf7ec 0, #f3eadf 40%, #efe2d4 100%);
+  color: var(--hf-text);
+  font-family: "Lora", "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--hf-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: radial-gradient(circle at top, #374151 0, var(--hf-bg-dark) 55%, #111827 100%);
+  color: #f9fafb;
+  padding: 1.75rem 1.4rem 2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.35);
+  box-shadow: 6px 0 18px rgba(15, 23, 42, 0.55);
+  position: sticky;
+  top: 0;
+  align-self: start;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  /* Scrollbar da sidebar – Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.7) transparent;
+}
+
+/* Scrollbar da sidebar – Chrome, Edge, etc. */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgba(209, 213, 219, 0.9),
+    rgba(156, 163, 175, 0.9)
+  );
+  border-radius: 999px;
+  border: 1px solid rgba(17, 24, 39, 0.3);
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 231, 235, 1),
+    rgba(156, 163, 175, 1)
+  );
+}
+
+.sidebar h1 {
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.35rem;
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sidebar small {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: #d1d5db;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid rgba(249, 250, 251, 0.16);
+  margin: 1.1rem 0 1.3rem;
+}
+
+.nav-section {
+  margin-top: 0.9rem;
+}
+
+.nav-section-title {
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #9ca3af;
+  margin-bottom: 0.25rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.2rem 0 0rem;
+}
+
+.nav-list li {
+  margin: 0.05rem 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.22rem 0.45rem;
+  border-radius: 0.5rem;
+  font-size: 0.88rem;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f9fafb;
+  transition: background 140ms ease, transform 80ms ease, box-shadow 120ms ease;
+}
+
+.nav-link:hover {
+  background: var(--hf-bg-dark-soft);
+  text-decoration: none;
+  transform: translateX(2px);
+  box-shadow: 0 0 0 1px rgba(248, 250, 252, 0.15);
+}
+
+.nav-link:active {
+  transform: translateX(0);
+  box-shadow: none;
+}
+
+.main {
+  padding: 2.1rem 3rem;
+}
+
+.content {
+  max-width: 920px;
+  margin: 0 auto 2.5rem;
+  background: linear-gradient(135deg, #fdf7ee 0, #f7ecde 35%, #f3e5d4 100%);
+  padding: 2.3rem 2.6rem;
+  border-radius: 1rem;
+  border: 1px solid var(--hf-border-soft);
+  box-shadow:
+    0 18px 35px rgba(148, 120, 94, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.35), transparent 40%);
+  pointer-events: none;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  position: relative;
+  z-index: 1;
+}
+
+.content p,
+.content ul,
+.content ol,
+.content nav {
+  position: relative;
+  z-index: 1;
+}
+
+.content h1 {
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin-top: 0;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  color: var(--hf-heading);
+}
+
+.content h2 {
+  margin-top: 1.9rem;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.35rem;
+  color: var(--hf-heading);
+  border-bottom: 1px solid rgba(148, 120, 94, 0.4);
+  padding-bottom: 0.25rem;
+}
+
+.content h3 {
+  margin-top: 1.3rem;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--hf-heading);
+}
+
+.content p {
+  margin: 0.6rem 0 0.9rem;
+  color: var(--hf-text-soft);
+  font-size: 0.98rem;
+}
+
+.content em {
+  color: #4b5563;
+}
+
+.content strong {
+  color: #374151;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.7rem;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.breadcrumb a {
+  color: #6b7280;
+}
+
+.content nav {
+  margin: 1.1rem 0 1.4rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.65rem; 
+}
+
+.content nav strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4b5563;
+}
+
+.content nav ul {
+  padding-left: 1.1rem;
+  margin: 0.1rem 0 0;
+}
+
+.content nav li {
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin: 0.2rem 0;
+}
+
+blockquote {
+  margin: 0.9rem 0;
+  padding: 0.7rem 1rem;
+  border-left: 3px solid var(--hf-accent);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 0.5rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+code {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.2rem;
+}
+
+pre {
+  background: rgba(17, 24, 39, 0.95);
+  color: #e5e7eb;
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+@media (max-width: 960px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    max-height: none;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.45);
+  }
+
+  .main {
+    padding: 1.4rem 1.1rem 2.5rem;
+  }
+
+  .content {
+    padding: 1.8rem 1.5rem;
+  }
+
+}
