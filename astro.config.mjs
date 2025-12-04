@@ -1,6 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://morassutti-molina.com', // domínio customizado
-  base: '/', // tudo vive na raiz do domínio
+  srcDir: 'src',
+  output: 'static',
+  site: 'https://marcimm.github.io',
+  base: '/familia-morassutti-molina/',
 });
