@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="CAPÍTULO 12 — Ditadura e Interior: Dois Brasis em Ritmos Diferentes">
@@ -21,7 +22,8 @@ import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
       <li><a href="#sec-12-7">12.7 — Diretas Já e o fim do regime</a></li>
       <li><a href="#sec-12-8">12.8 — Por que o interior lembra esse período de forma diferente?</a></li>
       <li><a href="#sec-12-9">12.9 — Linha do Tempo da Ditadura e o Interior (1964–1985)</a></li>
-      <li><a href="#sec-12-10">12.10 — Fontes consultadas</a></li>
+      <li><a href="#sec-12-10">12.10 — Os números da ditadura: avanços, custos e consequências</a></li>
+      <li><a href="#sec-12-11">12.11 — Fontes consultadas</a></li>
     </ul>
   </nav>
 
@@ -37,6 +39,41 @@ import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
     No interior, entretanto, o dia seguinte foi igual ao anterior: a lavoura precisava ser cuidada, o gado alimentado, o comércio aberto.
     Sem universidades, sindicatos fortes ou imprensa ativa, o interior vivia distante das tensões políticas.
   </p>
+
+  <div class="figura-linha">
+  <figure class="figura">
+    <img src={`${base}images/br_ditadura_tanques_rua.png`} 
+         alt="Tanques do Exército ocupando avenida no centro do Rio de Janeiro em 1964">
+    <figcaption>
+      Tanques do Exército ocupam a Avenida Presidente Vargas, no Rio de Janeiro, durante o golpe de 1964,
+      simbolizando a ruptura da ordem democrática e o início da ditadura militar.
+      <span class="figura-fonte">Fonte: Arquivo Nacional / Correio da Manhã.</span>
+    </figcaption>
+  </figure>
+
+  <figure class="figura">
+  <img src={`${base}images/br_ditadura_doi_codi.png`} 
+         alt="Vista aérea do complexo do DOI-CODI em São Paulo durante a ditadura">
+    <figcaption>
+      Vista aérea da OBAN (posterior DOI-CODI de São Paulo).
+      Principal centro de interrogatório, espionagem e repressão política durante a ditadura.
+      Milhares de opositores — estudantes, trabalhadores, religiosos, artistas e militantes — foram monitorados, presos 
+      e torturados nessas instalações, que operavam sob sigilo absoluto.  
+       <span class="figura-fonte">Fonte: Arquivo Público do Estado de São Paulo / Folha Imagem.</span>
+    </figcaption>
+  </figure>
+
+  <figure class="figura">
+    <img src={`${base}images/br_ditadura_universidade_brasilia.png`} 
+         alt="Polícia Militar reprimindo estudantes dentro da Universidade de Brasília">
+    <figcaption>
+      Polícia Militar reprime estudantes dentro da Universidade de Brasília (UnB) nos anos mais duros da ditadura,
+      evidenciando o alvo constante sobre universidades e movimentos estudantis.
+      <span class="figura-fonte">Fonte: UnB TV / Acervo Universidade de Brasília.</span>
+    </figcaption>
+  </figure>
+</div>
+
 
   <h2 id="sec-12-3">12.3 — A vida no interior: silêncio, rotina e distância</h2>
   <p>
@@ -89,6 +126,38 @@ import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
   <p>
     Em 1985, a ditadura terminou com uma transição pacífica.
   </p>
+
+  <div class="figura-linha">
+  <figure class="figura">
+    <img 
+      src={`${base}images/br_ditadura_diretas_ja_1.jpg`}
+      alt="Multidão reunida em São Paulo durante o movimento Diretas Já, 1984"
+    />
+
+  <figcaption>
+    Multidão ocupa as ruas de São Paulo durante o movimento Diretas Já, em 1984. 
+    As grandes manifestações marcaram a pressão popular pelo fim da ditadura militar e pela 
+    restauração das eleições diretas para presidente, simbolizando um dos maiores movimentos 
+    cívicos da história brasileira.
+    <span class="figura-fonte">Fonte: Arquivo Público / Movimento Diretas Já.</span>
+  </figcaption>
+</figure>
+
+<figure class="figura">
+  <img 
+    src={`${base}images/br_ditadura_diretas_ja_2.jpg`}
+    alt="Comício das Diretas Já na Praça da Sé, São Paulo, 1984"
+  />
+
+  <figcaption>
+    Comício das Diretas Já na Praça da Sé, em São Paulo, 1984. 
+    A mobilização reuniu líderes políticos, artistas, sindicalistas e centenas de milhares de 
+    manifestantes, consolidando o impulso final para a redemocratização do país.
+    <span class="figura-fonte">Fonte: Acervo Histórico / Movimento Diretas Já.</span>
+  </figcaption>
+</figure>
+</div>
+
 
   <h2 id="sec-12-8">12.8 — Por que o interior lembra esse período de forma diferente?</h2>
 
@@ -169,7 +238,81 @@ import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
     <strong>Conclusão:</strong> enquanto uma parte do Brasil vivia repressão direta, outra seguia sua rotina sem perceber a violência política. Por isso, as memórias da ditadura são tão diferentes entre cidade e campo.
   </p>
 
-  <h2 id="sec-12-10">12.10 — Fontes consultadas</h2>
+
+<section id="sec-12.10" style="margin-top: 3rem;">
+  <h2>12.10 — Os números da ditadura: avanços, custos e consequências</h2>
+
+  <p>
+    A ditadura militar brasileira deixou marcas profundas no país. 
+    Ao mesmo tempo em que promoveu crescimento econômico em certos períodos, 
+    também implementou um sistema de repressão que atingiu milhares de brasileiros.
+    A seguir, um panorama baseado em dados oficiais e estudos históricos amplamente reconhecidos.
+  </p>
+
+  <h3>Mortes, tortura e repressão política</h3>
+  <ul>
+    <li><strong>434 mortos e desaparecidos</strong> oficialmente reconhecidos pela Comissão Nacional da Verdade (CNV).</li>
+    <li>Estimativas independentes apontam até <strong>1.000 vítimas</strong> considerando casos não documentados.</li>
+    <li><strong>Mais de 20.000 pessoas torturadas</strong> em centros como DOI-CODI, OBAN e DOPS.</li>
+    <li><strong>30.000 presos políticos</strong> entre 1964 e 1979.</li>
+    <li><strong>10.000 a 20.000 brasileiros exilados</strong>, incluindo artistas, jornalistas, estudantes e professores.</li>
+    <li><strong>3.000 professores e pesquisadores</strong> cassados ou afastados das universidades.</li>
+  </ul>
+
+  <h3>Censura e controle da informação</h3>
+  <ul>
+    <li><strong>Mais de 500 peças, filmes, músicas e livros censurados.</strong></li>
+    <li>Jornais sofriam intervenções diárias, com páginas inteiras cobertas por tarjas pretas.</li>
+    <li>Temas proibidos incluíam política, economia, movimentos sociais e qualquer crítica ao regime.</li>
+  </ul>
+
+  <h3>Economia: crescimento e desequilíbrio</h3>
+  <p><strong>O “Milagre Econômico” (1968–1973)</strong> marcou um período de forte expansão:</p>
+  <ul>
+    <li><strong>PIB cresceu 11,2% ao ano</strong>, em média.</li>
+    <li>A indústria ampliou sua participação no PIB: <strong>22% (1964) → 32% (1975)</strong>.</li>
+    <li>Obras de grande porte: <em>Transamazônica, Ponte Rio–Niterói, Itaipu, Telebrás</em>.</li>
+    <li>Crescimento das cidades médias e início da urbanização acelerada.</li>
+  </ul>
+
+  <p>Mas esse crescimento tinha um preço:</p>
+  <ul>
+    <li><strong>Dívida externa explodiu</strong>: US$ 3,1 bilhões (1964) → <strong>US$ 96 bilhões (1984)</strong>.</li>
+    <li><strong>Desigualdade social aumentou</strong>: índice de Gini passou de 0,50 para 0,63.</li>
+    <li><strong>Inflação descontrolada</strong> no fim do regime: 110% (1980) e 239% (1985).</li>
+    <li>Salários perderam poder de compra e o custo de vida disparou.</li>
+  </ul>
+
+  <h3>Impactos sociais</h3>
+  <ul>
+    <li>A concentração de renda aumentou, reforçando desigualdades históricas.</li>
+    <li>Serviços públicos — como educação básica e saúde — sofreram estagnação.</li>
+    <li>Muitos programas sociais foram substituídos por obras de impacto político.</li>
+  </ul>
+
+  <h3>Resumo equilibrado</h3>
+  <p>Do ponto de vista histórico, o período deixou dois legados distintos:</p>
+
+  <ul>
+    <li>
+      <strong>Avanços econômicos</strong>: crescimento rápido em alguns anos, industrialização,
+      grandes obras e modernização das cidades.
+    </li>
+    <li>
+      <strong>Custos humanos elevados</strong>: perseguições políticas, censura, tortura,
+      mortes, desaparecimentos, exílio e perda de direitos civis.
+    </li>
+  </ul>
+
+  <p>
+    Esses números ajudam a compreender por que a memória da ditadura ainda é tão dividida:
+    enquanto alguns lembram o período pelo crescimento econômico,
+    outros viveram — ou herdaram — as consequências diretas da repressão.
+  </p>
+
+</section>
+
+  <h2 id="sec-12-11">12.11 — Fontes consultadas</h2>
   <ul>
     <li>Schwarcz, Lilia Moritz & Starling, Heloisa — <i>Brasil: Uma Biografia</i>.</li>
     <li>Reis, Daniel Aarão — <i>Ditadura e Democracia no Brasil</i>.</li>
@@ -183,7 +326,11 @@ import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
     <li>Comissão Nacional da Verdade — <i>Relatório Final</i> (2014).</li>
     <li>CPDOC/FGV — Documentos e entrevistas.</li>
     <li>IBGE — Estudos sobre urbanização e ruralidade.</li>
+    <li>FGV IBRE — Índices de Inflação e Custo de Vida</li>
+    <li>Banco Mundial — Dados Históricos da América Latina</li>
+    <li>IPEA — Estudos sobre Mercado de Trabalho e Desigualdade</li>
   </ul>
+
 
   </article>
 

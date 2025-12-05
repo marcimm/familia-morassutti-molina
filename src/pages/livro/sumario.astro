@@ -3,83 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
-<style>
-  #sumario {
-    margin-top: 1rem;
-  }
-
-  .sumario-intro {
-    margin-bottom: 2rem;
-  }
-
-  .sumario-lista {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .sumario-item {
-    margin-bottom: 1.4rem;
-    padding: 1rem 1.2rem;
-    border-radius: 8px;
-    background: #f7f3eb;
-  }
-
-  .sumario-item h2,
-  .sumario-item h3 {
-    margin: 0 0 0.25rem 0;
-    font-size: 1rem;
-  }
-
-  .sumario-item a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-  }
-
-  .sumario-item a:hover {
-    text-decoration: underline;
-  }
-
-  .sumario-item p {
-    margin: 0.2rem 0 0 0;
-    font-size: 0.9rem;
-    color: #555;
-  }
-
-  /* subíndices (com “tab”/recuo) */
-  .subindice-lista {
-    list-style: none;
-    margin: 0.4rem 0 0 0;
-    padding-left: 1.5rem; /* efeito de tab */
-  }
-
-  .subindice-lista li {
-    font-size: 0.86rem;
-    color: #555;
-    margin: 0.12rem 0;
-  }
-
-  .subindice-lista a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #555;
-  }
-
-  .subindice-lista a:hover {
-    text-decoration: underline;
-  }
-
-  .bloco-anexos {
-    margin-top: 2.5rem;
-  }
-
-  .bloco-anexos h2 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-  }
-</style>
-
 <BaseLayout title="Sumário — História da Família Morassutti–Molina">
   <div class="breadcrumb">
     Início · Sumário
@@ -299,20 +222,48 @@ const base = import.meta.env.BASE_URL;
 
     <!-- CAP 12 -->
     <li class="sumario-item">
-      <h2><a href={`${base}livro/cap12`}>CAPÍTULO 12 — A família moderna: 1970–2000 em fotos e memórias</a></h2>
+      <h2><a href={`${base}livro/cap12`}>CAPÍTULO 12 — Ditadura Militar e o Interior: Dois Brasis em Ritmos Diferentes</a></h2>
       <p>
-        Marca a entrada da família no período moderno, quando surgem as primeiras
-        fotos domésticas. Reconta a história dos avós e pais por meio de imagens,
-        cenas do cotidiano e lembranças visuais.
+        Analisa como a ditadura militar (1964–1985) foi vivida de maneira diferente nas capitais e no interior.
+        Mostra o contraste entre repressão, censura e grandes obras nas cidades maiores e a rotina quase inalterada
+        das pequenas cidades rurais, onde a política parecia distante do cotidiano.
       </p>
       <ul class="subindice-lista">
-        <li><a href={`${base}livro/cap12#sec-12-1`}>12.1 — Quando a família começa a aparecer nas fotos (1970–1979)</a></li>
-        <li><a href={`${base}livro/cap12#sec-12-2`}>12.2 — Infância, escola e cotidiano no interior (1980–1989)</a></li>
-        <li><a href={`${base}livro/cap12#sec-12-3`}>12.3 — Novas rotinas, novas paisagens (1990–2000)</a></li>
-        <li><a href={`${base}livro/cap12#sec-12-4`}>12.4 — A memória visual como herança</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-1`}>12.1 — Introdução: Dois Brasis diferentes</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-2`}>12.2 — 1964: O golpe que quase não chegou ao interior</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-3`}>12.3 — A vida no interior: silêncio, rotina e distância</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-4`}>12.4 — O AI-5 e o período mais duro da ditadura</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-5`}>12.5 — O “milagre econômico”: obras, crescimento e desigualdade</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-6`}>12.6 — A crise dos anos 70 e o colapso do modelo</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-7`}>12.7 — Diretas Já e o fim do regime</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-8`}>12.8 — Por que o interior lembra esse período de forma diferente?</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-9`}>12.9 — Linha do Tempo da Ditadura e o Interior (1964–1985)</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-10`}>12.10 — Os números da ditadura: avanços, custos e consequências</a></li>
+        <li><a href={`${base}livro/cap12#sec-12-11`}>12.11 — Fontes consultadas</a></li>
       </ul>
     </li>
-  </ul>
+
+    <!-- CAP 13 -->
+    <li class="sumario-item">
+      <h2><a href={`${base}livro/cap13`}>CAPÍTULO 13 — Da Estabilidade ao Desafio: As diferenças entre as gerações</a></h2>
+      <p>
+        Compara as condições de vida e de trabalho das gerações formadas entre as décadas de 1970 e 2000,
+        mostrando como o Brasil interiorano passou de um cenário de estabilidade, terrenos acessíveis e
+        construção comunitária para um contexto de valorização imobiliária, exigência de qualificação,
+        transformação digital e desafios emocionais nas novas gerações.
+      </p>
+      <ul class="subindice-lista">
+        <li><a href={`${base}livro/cap13#131`}>13.1 — Trabalho e futuro: como tudo começava</a></li>
+        <li><a href={`${base}livro/cap13#132`}>13.2 — O Brasil dos anos 1970 e 1980</a></li>
+        <li><a href={`${base}livro/cap13#133`}>13.3 — Patrimônio familiar e vida simples</a></li>
+        <li><a href={`${base}livro/cap13#134`}>13.4 — A grande virada dos anos 1990 e 2000</a></li>
+        <li><a href={`${base}livro/cap13#135`}>13.5 — As novas gerações e seus desafios</a></li>
+        <li><a href={`${base}livro/cap13#136`}>13.6 — Dois Brasis dentro da mesma família</a></li>
+        <li><a href={`${base}livro/cap13#13-7`}>13.7 — Paralelo histórico: quando a história se repete</a></li>
+        <li><a href={`${base}livro/cap13#13-8`}>13.8 — Fontes e Referências</a></li>
+      </ul>
+    </li>
+
 
   <!-- ANEXOS / OUTRAS PÁGINAS -->
   <section class="bloco-anexos">
