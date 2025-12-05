@@ -3,66 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
 ---
 
-<style>
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  cursor: help;
-  border-bottom: 1px dotted #aaa;
-  padding: 0 2px;
-  white-space: nowrap;
-}
-
-/* Tooltip box */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 220px;
-  background-color: #ffffff;
-  color: #333;
-  text-align: left;
-  padding: 8px 10px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  position: absolute;
-  z-index: 10;
-  top: 140%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.82rem;
-  line-height: 1.32;
-  font-weight: 400;
-  white-space: normal;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
-}
-
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 6px;
-  border-style: solid;
-  border-color: transparent transparent #ddd transparent;
-}
-
-/* Hover effect */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-/* Legenda de gerações */
-.geracao-legenda {
-  background:#f7f7f7;
-  padding:12px 15px;
-  border-left:4px solid #777;
-  margin-bottom:25px;
-  font-size:0.95rem;
-  line-height:1.45;
-}
-</style>
-
 <BaseLayout title="CAPÍTULO 10 — Os Primeiros Casamentos no Brasil">
   <div class="breadcrumb"><a href="/">Início</a> · CAPÍTULO 10 — Os Primeiros Casamentos no Brasil</div>
 
@@ -81,16 +21,14 @@ import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
     os vínculos familiares e a consolidação das gerações que surgiriam nas décadas seguintes. Este capítulo apresenta essas uniões, 
     divididas pelo lado paterno e materno, com informações completas extraídas das certidões.
   </p>
-
-    
-
+  
 
   <!-- ============================= -->
   <!-- SEÇÃO A — LADO PATERNO (ITÁLIA) -->
   <!-- ============================= -->
 
 <h2 style="margin-top:40px;">SEÇÃO A — Lado Paterno (Itália)</h2>
-  <hr>
+
 <p>
   Esta seção reúne os casamentos que compõem o <strong>ramo paterno</strong> da família: 
   as linhagens <strong>Morassutti</strong>, <strong>Lazzari</strong>, <strong>Arena</strong>, 
@@ -210,7 +148,7 @@ import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
   
   <hr>  
   <h2 style="margin-top:40px;">SEÇÃO B — Lado Materno (Espanha)</h2>
-  <hr>
+
 <p>
   Esta seção apresenta os casamentos que formam o <strong>ramo materno</strong> da família: 
   as linhagens <strong>Molina</strong>, <strong>Matheus</strong>, <strong>Sanches</strong>, 
@@ -343,7 +281,6 @@ import NavegacaoCapitulo from "../../components/NavegacaoCapitulo.astro";
     <li><strong>Local:</strong> Rolândia/PR</li>
     <li><strong>Observação:</strong> anotação sobre regime de bens desde 1953</li>
   </ul>
-
 
   <hr>
 

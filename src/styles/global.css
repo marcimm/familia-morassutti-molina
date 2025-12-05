@@ -170,7 +170,6 @@ a:hover {
     0 0 0 1px rgba(255, 255, 255, 0.9) inset;
   position: relative;
 }
-
 .content::before {
   content: "";
   position: absolute;
@@ -178,21 +177,18 @@ a:hover {
   border-radius: inherit;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.35), transparent 40%);
   pointer-events: none;
+  z-index: -1;        /* 👈 joga o overlay para trás do conteúdo */
 }
 
 .content h1,
 .content h2,
-.content h3 {
-  position: relative;
-  z-index: 1;
-}
-
+.content h3,
 .content p,
 .content ul,
 .content ol,
 .content nav {
   position: relative;
-  z-index: 1;
+  z-index: auto;   /* 👈 não cria mais stacking context separado */
 }
 
 .content h1 {
@@ -328,6 +324,73 @@ pre code {
 
   .content {
     padding: 1.8rem 1.5rem;
-  }
+  } 
+}
 
+/* cap 10 */
+
+/* Legenda de gerações */
+.geracao-legenda {
+  background:#f7f7f7;
+  padding:12px 15px;
+  border-left:4px solid #777;
+  margin-bottom:25px;
+  font-size:0.95rem;
+  line-height:1.45;
+}
+
+/* =========================================
+   TOOLTIP — ESTILO GLOBAL
+   ========================================= */
+
+.tooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted #666;
+  padding: 0 2px;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  pointer-events: none;
+
+  /* tamanho exato do texto, sem quebra */
+  white-space: nowrap;
+  width: auto;
+  max-width: none;
+
+  /* posição */
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* aparência — 100% sólida */
+  background-color: #ffffff;
+  color: #222;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  z-index: 999999;
+
+  font-size: 0.85rem;
+  line-height: 1.32;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.28);
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
