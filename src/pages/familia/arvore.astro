@@ -39,4 +39,1168 @@ const base = import.meta.env.BASE_URL;
     </figcaption>
   </figure>
 
+
+   <h1>Familiares linhagens principais</h1>
+
+  <table id="tabela-familia" style="width:100%; border-collapse:collapse; font-size:0.85rem;">
+    <thead>
+      <tr style="background:#f0e7dc;">
+        <th style="padding:0.25rem 0.35rem; border-bottom:1px solid #d6c7b4; cursor:pointer; text-align:left;"  onclick="sortTable(0)">Nome</th>
+        <th style="padding:0.25rem 0.35rem; border-bottom:1px solid #d6c7b4; cursor:pointer; text-align:center;" onclick="sortTable(1)">Parentesco</th>
+        <th style="padding:0.25rem 0.35rem; border-bottom:1px solid #d6c7b4; cursor:pointer; text-align:center;" onclick="sortTable(2)">País</th>
+        <th style="padding:0.25rem 0.35rem; border-bottom:1px solid #d6c7b4; cursor:pointer; text-align:center;" onclick="sortTable(3)">Nascimento</th>
+        <th style="padding:0.25rem 0.35rem; border-bottom:1px solid #d6c7b4; cursor:pointer; text-align:center;" onclick="sortTable(4)">Falecimento</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Marcio Molina Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Autor do Livro</td>    
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>    
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1983</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">José Antonio Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">pai</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1957</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Irene Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Sua mãe</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1957</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Fabiano Molina Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">irmäo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1979</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Cristiano Molina Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">irmäo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1986</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">João Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">avô paterno</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1917</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1992</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Iolanda Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1927</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2014</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio Martinez Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">avô materno</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1933</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Clementina Aparecida Roman Mateus</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">avó materna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1936</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">João Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1961</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Sebastião Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1950</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2021</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Lidia Aparecida Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1946</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonia Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tia</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1947</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Aparecida Roman Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1954</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Francisco Roman Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1956</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Ivanira Roman Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1960</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Helio Roman Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1962</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Vanda Maria Roman Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1965</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Marcia Roman Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1972</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Luigi Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> IT
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1894</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Ersilia Lazzari</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">bisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1896</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">José Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1903</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1980</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Marina Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">bisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1905</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Bartholomeu Garcia Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1906</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Isabel Martines Girado</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">bisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/es.png`} alt="ES" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> ES</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Joao Roman Matheus</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Teresa Matheus</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">bisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Diogo Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">primo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Anderson Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">primo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Lucas Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">primo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Reginaldo Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">primo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Luis Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">primo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Suelen Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">prima</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Rosângela Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">prima</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Leandro Barrotti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">primo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Donizete Barrotti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">primo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Neide Barrotti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">prima</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Joao Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-avô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1931</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Aurélio Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-avô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1947</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">José Augusto Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-avô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1952</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Angelina Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1933</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Sebastiana Arena Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1944</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2012</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Bartolo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-avô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Miguel</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-avô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Izabel Matheus</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1935</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2021</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Mafalda</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1949</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">2018</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Soeli Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tia</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Sebastiana</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tia</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Pedro Barrotti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cônjuge da tia</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Giovanni Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Rossetti Maria</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Lazzari Cataldo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Pirelli Angela</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Domenico Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1873</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1962</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Maria Gregoria</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1877</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Giovanni Tiraboschi</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1868</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1943</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Angelina Batagliera</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1882</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Miguel Matheus Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Catharina Garcia Sanches</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio Girado</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Isabel Jordan Martines</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">trisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Ercilia Lazarri</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Irmã da bisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1979</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1969</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Maria Das Graças Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima do pai</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Maria De Fatima Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima do pai</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Paschoal Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1899</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1970</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Luiz Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1907</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1997</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Leopoldo Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">João Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Paulo Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Tereza Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Irmã do bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1914</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Palmira Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Irmã do bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1918</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2001</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Rosa Luiz Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Irmã do bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Jose Guerino Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1913</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Vicente Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1919</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1919</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1996</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Amabile Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Irmã da bisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1904</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1984</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Thereza Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Irmã da bisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1911</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1936</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Virginia Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Irmã da bisavó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1917</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1990</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Devanir Matheus Guebara</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da mãe</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2003</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Elogio Matheus Molina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">tio-bisavô</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1975</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Pedro cecilio Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio do pai</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1943</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Pedro Guebara Martins</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio da mãe</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1931</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1998</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Adelino Riguetti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio da mãe</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Pasquale Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">antepassado direto (5 gerações)</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Rosa Napoli</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">antepassada direto (5 gerações)</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Luigi Gregorio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">antepassado direto (5 gerações)</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Tereza Paro</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">antepassada direto (5 gerações)</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Fernando Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">antepassado direto (5 gerações)</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Mariana Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">2ª prima</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Primo Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1930</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2022</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Sílvio Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1938</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Domingos Arena Neto</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1945</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2014</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Rosa Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1932</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Olinda Arena</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1937</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Elio Coneglian</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1939</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio Valdir Coneglian</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1954</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Mathilde Coneglian</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1941</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Bortolo Gregorio</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio-avô da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1883</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1968</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Luiz Gregório</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio-avô da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1893</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1973</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio Gregório</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio-avô da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1900</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1968</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio Aparecido Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1948</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2005</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Zelindo Terabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1951</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">João Eugenio Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1955</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Pierina Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1944</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1944</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Aparecida de Lourdes Tirabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1943</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Regina Celia Terabosco</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1958</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio Faxina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1929</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Waldemar Faxina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1942</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">José Coga</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1935</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Roberto Resina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1937</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">João Francisco Resina Navarro</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Primo da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1956</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Catarina Faxina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1923</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Emilia Faxina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Prima da avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1927</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2020</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Luiz Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio do avô paterno</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1951</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Desconhecido</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Marido da Prima do pai</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Desconhecido Lopes</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Marido da Prima do pai</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Vicente Malaguti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Sogro da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1913</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1983</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Lidia Vidotti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Sogra da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1917</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 2005</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Maria Delavalle</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tia da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1911</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1993</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Angelo Coneglian</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Aparecida Faxina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tia da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1913</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1977</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Elvira Tomazini</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tia da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1924</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1993</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">João Faxina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1895</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio Cogo</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/it.png`} alt="IT" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> IT</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1906</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> 1992</td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Jose Ramon Resina</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tio da avó paterna</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/es.png`} alt="ES" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> ES</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1912</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Pedro Guebara Garcia</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Sogro da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/es.png`} alt="ES" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> ES</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Izabel Martins</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Sogra da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"><img src={`${base}flags/es.png`} alt="ES" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;"> ES</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Anna Ferreira</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Tia da avô materno</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">João Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cunhado da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1940</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Durvalino Malaguti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cunhado da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1946</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Dirceu Aparecido Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cunhado da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1955</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Antonio paulo Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cunhado da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Jose Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cunhado da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Vanil Malaguti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cunhada da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">1952</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Estelina América Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cunhada da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Maria Malagutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Cunhada da tia-avó</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">
+        <img src={`${base}flags/br.png`} alt="BR" style="width:16px; height:auto; vertical-align:middle; margin-right:2px;" /> BR
+      </td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">João Morassutti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Pai do Tio do avô paterno</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Maria Rossetti</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Mãe do Tio do avô paterno</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    <tr>
+      <td style="padding:0.2rem 0.35rem; text-align:left;">Cleder Domingues Lopes</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;">Marido da 2ª prima</td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+      <td style="padding:0.2rem 0.35rem; text-align:center;"></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <script is:inline>
+    function sortTable(colIndex) {
+      const table = document.getElementById('tabela-familia');
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      const asc = !table.dataset.sortAsc || table.dataset.sortAsc === 'false';
+
+      rows.sort((a, b) => {
+        const aText = a.children[colIndex].innerText.trim();
+        const bText = b.children[colIndex].innerText.trim();
+
+        const aNum = parseFloat(aText.replace(/[^\d.-]/g, ''));
+        const bNum = parseFloat(bText.replace(/[^\d.-]/g, ''));
+
+        if (!isNaN(aNum) && !isNaN(bNum)) {
+          return asc ? aNum - bNum : bNum - aNum;
+        }
+
+        return asc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+      });
+
+      rows.forEach(row => tbody.appendChild(row));
+      table.dataset.sortAsc = asc ? 'true' : 'false';
+    }
+  </script>
+
 </BaseLayout>
